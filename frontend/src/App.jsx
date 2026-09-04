@@ -1,8 +1,7 @@
 import { useRef, useState } from 'react'
 import './App.css'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
-const API_URL = `${API_BASE_URL.replace(/\/$/, '')}/analyser`
+const API_URL = (import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')
 
 function App() {
   const [file, setFile] = useState(null)
@@ -40,7 +39,10 @@ function App() {
     setError('')
 
     try {
-      const response = await fetch(API_URL, { method: 'POST', body: formData })
+      const response = await fetch(`${API_URL}/analyser`, {
+        method: 'POST',
+        body: formData,
+      })
       const data = await response.json()
       if (!response.ok) throw new Error(data.detail || 'L’analyse a échoué.')
       setResult(data)
