@@ -125,7 +125,7 @@ function App() {
               <article className={`summary-card ${fontFindings.length ? 'warning' : 'valid'}`}><span className="card-label">POLICES</span><strong>{fontFindings.length ? 'Polices non conforme' : 'Conforme'}</strong><small>{fontFindings.length} famille{fontFindings.length !== 1 ? 's' : ''} different{fontFindings.length !== 1 ? 'es' : 'e'} de Calibri</small></article>
               <article className={`summary-card ${sizeFindings.length ? 'warning' : 'valid'}`}><span className="card-label">TAILLES</span><strong>{sizeFindings.length ? `${sizeFindings.length} écart${sizeFindings.length !== 1 ? 's' : ''} de taille` : 'Conforme'}</strong><small>Taille attendue : 11 pt</small></article>
               <article className={`summary-card ${pageFindings.length ? 'warning' : 'valid'}`}><span className="card-label">NUMÉROTATION</span><strong>{pageFindings.length ? `${pageFindings.length} page${pageFindings.length !== 1 ? 's' : ''} sans numéro / numérotation incomplète` : 'Conforme'}</strong><small>Numéros positionnés en bas</small></article>
-              <article className={`summary-card ${result.marge ? 'valid' : 'warning'}`}><span className="card-label">MARGES</span><strong>{result.marge ? 'Conforme' : 'Differente de 2.5 cm'}</strong><small>Marges de2.5 cm </small></article>
+              <article className={`summary-card ${result.marge ? 'valid' : 'warning'}`}><span className="card-label">MARGES</span><strong>{result.marge ? 'Conforme' : 'Differente de 2.5 cm'}</strong><small>Marges de 2.5 cm </small></article>
             </div>
 
             <div className="detail-grid">
