@@ -79,7 +79,7 @@ def analyser_pdf(pdf_bytes: bytes) -> dict:
                     if numero_page_valide:
                         numero_page_ecrit = True
 
-                    if len(texte) >= 5 and not 10.51 <= taille <= 11.49 and not (est_gras or est_souligne):
+                    if len(texte) >= 5 and not 10.01 <= taille <= 11.99 and not (est_gras or est_souligne):
                         resultats_taille.append({
                             "coordonnees": {
                                 "x0": span["bbox"][0],

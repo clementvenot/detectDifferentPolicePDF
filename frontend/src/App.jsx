@@ -123,7 +123,7 @@ function App() {
             </div>
             <div className="summary-grid">
               <article className={`summary-card ${fontFindings.length ? 'warning' : 'valid'}`}><span className="card-label">POLICES</span><strong>{fontFindings.length ? 'À vérifier' : 'Conforme'}</strong><small>{fontFindings.length} famille(s) hors Calibri</small></article>
-              <article className={`summary-card ${sizeFindings.length ? 'warning' : 'valid'}`}><span className="card-label">TAILLES</span><strong>{sizeFindings.length ? `${sizeFindings.length} écart(s)` : 'Conforme'}</strong><small>Plage attendue : 10.51–11.49 pt</small></article>
+              <article className={`summary-card ${sizeFindings.length ? 'warning' : 'valid'}`}><span className="card-label">TAILLES</span><strong>{sizeFindings.length ? `${sizeFindings.length} écart(s)` : 'Conforme'}</strong><small>Taille attendue : 11 pt</small></article>
               <article className={`summary-card ${pageFindings.length ? 'warning' : 'valid'}`}><span className="card-label">NUMÉROTATION</span><strong>{pageFindings.length ? `${pageFindings.length} page(s)` : 'Conforme'}</strong><small>Numéros positionnés en bas</small></article>
               <article className={`summary-card ${result.marge ? 'valid' : 'warning'}`}><span className="card-label">MARGES</span><strong>{result.marge ? 'Conforme' : 'À vérifier'}</strong><small>2.5 cm avec tolérance de 20 %</small></article>
             </div>
