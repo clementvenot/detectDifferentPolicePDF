@@ -78,8 +78,8 @@ function App() {
       <header className="topbar">
         <img className="brand-logo" src="/logo.jpeg" alt="Logo Contrôleur de ronéos" />
         <div>
-          <p className="eyebrow">Contrôle documentaire</p>
-          <h1>Analyse typographique</h1>
+          <p className="eyebrow">Contrôle typographique</p>
+          <h1>Analyse des cours avant construction du Ronéo</h1>
         </div>
         <span className="api-status"><i /> API connectée</span>
       </header>
@@ -88,7 +88,7 @@ function App() {
         <section className="intro">
           <div>
             <p className="eyebrow accent">RAPPORT DE CONFORMITÉ</p>
-            <h2>Vérifiez vos ronéos<br />avant envoi.</h2>
+            <h2>Vérifiez vos cours<br />avant envoi.</h2>
           </div>
           <p className="intro-copy">Déposez un PDF pour contrôler ses polices, tailles, numéros de page et marges.</p>
         </section>
